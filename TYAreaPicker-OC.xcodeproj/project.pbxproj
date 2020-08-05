@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4CEA81424DA557100C6C650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CEA81324DA557100C6C650 /* AppDelegate.m */; };
+		B4CEA81724DA557100C6C650 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CEA81624DA557100C6C650 /* SceneDelegate.m */; };
+		B4CEA81A24DA557100C6C650 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CEA81924DA557100C6C650 /* ViewController.m */; };
+		B4CEA81D24DA557100C6C650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CEA81B24DA557100C6C650 /* Main.storyboard */; };
+		B4CEA81F24DA557200C6C650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CEA81E24DA557200C6C650 /* Assets.xcassets */; };
+		B4CEA82224DA557200C6C650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CEA82024DA557200C6C650 /* LaunchScreen.storyboard */; };
+		B4CEA82524DA557200C6C650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CEA82424DA557200C6C650 /* main.m */; };
+		E4F7D8CE75E1C127B5D7121A /* libPods-TYAreaPicker-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 311E8B2E8B6B10FD8E0C5D17 /* libPods-TYAreaPicker-OC.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08D4F4C3E27064F3E0D0FF8F /* Pods-TYAreaPicker-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYAreaPicker-OC.release.xcconfig"; path = "Target Support Files/Pods-TYAreaPicker-OC/Pods-TYAreaPicker-OC.release.xcconfig"; sourceTree = "<group>"; };
+		311E8B2E8B6B10FD8E0C5D17 /* libPods-TYAreaPicker-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYAreaPicker-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		410DBFB627DFEA36F3D7D7CE /* Pods-TYAreaPicker-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYAreaPicker-OC.debug.xcconfig"; path = "Target Support Files/Pods-TYAreaPicker-OC/Pods-TYAreaPicker-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		B4CEA80F24DA557100C6C650 /* TYAreaPicker-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TYAreaPicker-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CEA81224DA557100C6C650 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B4CEA81324DA557100C6C650 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B4CEA81524DA557100C6C650 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B4CEA81624DA557100C6C650 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B4CEA81824DA557100C6C650 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B4CEA81924DA557100C6C650 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B4CEA81C24DA557100C6C650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4CEA81E24DA557200C6C650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4CEA82124DA557200C6C650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B4CEA82324DA557200C6C650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4CEA82424DA557200C6C650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4CEA80C24DA557100C6C650 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F7D8CE75E1C127B5D7121A /* libPods-TYAreaPicker-OC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A12178B5137977EAA7F86B0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				410DBFB627DFEA36F3D7D7CE /* Pods-TYAreaPicker-OC.debug.xcconfig */,
+				08D4F4C3E27064F3E0D0FF8F /* Pods-TYAreaPicker-OC.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A37DE83E6B619EDF3F7F7A24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				311E8B2E8B6B10FD8E0C5D17 /* libPods-TYAreaPicker-OC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4CEA80624DA557100C6C650 = {
+			isa = PBXGroup;
+			children = (
+				B4CEA81124DA557100C6C650 /* TYAreaPicker-OC */,
+				B4CEA81024DA557100C6C650 /* Products */,
+				A12178B5137977EAA7F86B0A /* Pods */,
+				A37DE83E6B619EDF3F7F7A24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B4CEA81024DA557100C6C650 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4CEA80F24DA557100C6C650 /* TYAreaPicker-OC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4CEA81124DA557100C6C650 /* TYAreaPicker-OC */ = {
+			isa = PBXGroup;
+			children = (
+				B4CEA81224DA557100C6C650 /* AppDelegate.h */,
+				B4CEA81324DA557100C6C650 /* AppDelegate.m */,
+				B4CEA81524DA557100C6C650 /* SceneDelegate.h */,
+				B4CEA81624DA557100C6C650 /* SceneDelegate.m */,
+				B4CEA81824DA557100C6C650 /* ViewController.h */,
+				B4CEA81924DA557100C6C650 /* ViewController.m */,
+				B4CEA81B24DA557100C6C650 /* Main.storyboard */,
+				B4CEA81E24DA557200C6C650 /* Assets.xcassets */,
+				B4CEA82024DA557200C6C650 /* LaunchScreen.storyboard */,
+				B4CEA82324DA557200C6C650 /* Info.plist */,
+				B4CEA82424DA557200C6C650 /* main.m */,
+			);
+			path = "TYAreaPicker-OC";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4CEA80E24DA557100C6C650 /* TYAreaPicker-OC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4CEA82824DA557200C6C650 /* Build configuration list for PBXNativeTarget "TYAreaPicker-OC" */;
+			buildPhases = (
+				D2B0497E133FB6B1C470B763 /* [CP] Check Pods Manifest.lock */,
+				B4CEA80B24DA557100C6C650 /* Sources */,
+				B4CEA80C24DA557100C6C650 /* Frameworks */,
+				B4CEA80D24DA557100C6C650 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TYAreaPicker-OC";
+			productName = "TYAreaPicker-OC";
+			productReference = B4CEA80F24DA557100C6C650 /* TYAreaPicker-OC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4CEA80724DA557100C6C650 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = TYOU;
+				TargetAttributes = {
+					B4CEA80E24DA557100C6C650 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B4CEA80A24DA557100C6C650 /* Build configuration list for PBXProject "TYAreaPicker-OC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4CEA80624DA557100C6C650;
+			productRefGroup = B4CEA81024DA557100C6C650 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4CEA80E24DA557100C6C650 /* TYAreaPicker-OC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4CEA80D24DA557100C6C650 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CEA82224DA557200C6C650 /* LaunchScreen.storyboard in Resources */,
+				B4CEA81F24DA557200C6C650 /* Assets.xcassets in Resources */,
+				B4CEA81D24DA557100C6C650 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D2B0497E133FB6B1C470B763 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TYAreaPicker-OC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4CEA80B24DA557100C6C650 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CEA81A24DA557100C6C650 /* ViewController.m in Sources */,
+				B4CEA81424DA557100C6C650 /* AppDelegate.m in Sources */,
+				B4CEA82524DA557200C6C650 /* main.m in Sources */,
+				B4CEA81724DA557100C6C650 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B4CEA81B24DA557100C6C650 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4CEA81C24DA557100C6C650 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4CEA82024DA557200C6C650 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4CEA82124DA557200C6C650 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4CEA82624DA557200C6C650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B4CEA82724DA557200C6C650 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4CEA82924DA557200C6C650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 410DBFB627DFEA36F3D7D7CE /* Pods-TYAreaPicker-OC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NBV6WA56UJ;
+				INFOPLIST_FILE = "TYAreaPicker-OC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TYOU.TYAreaPicker-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4CEA82A24DA557200C6C650 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08D4F4C3E27064F3E0D0FF8F /* Pods-TYAreaPicker-OC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NBV6WA56UJ;
+				INFOPLIST_FILE = "TYAreaPicker-OC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TYOU.TYAreaPicker-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4CEA80A24DA557100C6C650 /* Build configuration list for PBXProject "TYAreaPicker-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CEA82624DA557200C6C650 /* Debug */,
+				B4CEA82724DA557200C6C650 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4CEA82824DA557200C6C650 /* Build configuration list for PBXNativeTarget "TYAreaPicker-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CEA82924DA557200C6C650 /* Debug */,
+				B4CEA82A24DA557200C6C650 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4CEA80724DA557100C6C650 /* Project object */;
+}
