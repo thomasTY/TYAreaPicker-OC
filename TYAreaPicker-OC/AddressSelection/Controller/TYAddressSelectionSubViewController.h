@@ -9,14 +9,14 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef NS_ENUM(NSInteger, ZMAddressSelectionType) {
-    ZMAddressSelectionTypeProvince = 1, // 省
-    ZMAddressSelectionTypeCity ,// 市
-    ZMAddressSelectionTypeCounty// 区
+typedef NS_ENUM(NSInteger, TYAddressSelectionType) {
+    TYAddressSelectionTypeProvince = 1, // 省
+    TYAddressSelectionTypeCity ,// 市
+    TYAddressSelectionTypeCounty// 区
 };
 
 @interface TYAddressSelectionSubViewController : UIViewController
-@property (nonatomic, assign) ZMAddressSelectionType type;
+@property (nonatomic, assign) TYAddressSelectionType type;
 // 传cityId查区列表，传provinceId查市列表，不传查省列表
 @property (nonatomic, copy) NSString * provinceId;
 @property (nonatomic, copy) NSString * cityId;

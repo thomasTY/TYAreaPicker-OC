@@ -31,6 +31,7 @@
 #pragma mark - Private Method
 // 搭建界面
 - (void)UIConfig {
+    self.view.backgroundColor = TYColor(0xFFFFFF, 0x1A1A1A);
     [self.view addSubview:self.titleLabel];
     [self.view addSubview:self.areaButton];
     [self.view addSubview:self.arrowImageView];
@@ -43,8 +44,7 @@
     // 区域
     [self.areaButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.titleLabel);
-        make.right.equalTo(self.view);
-        make.width.mas_equalTo(100);
+        make.right.equalTo(self.view).offset(-30);
         make.height.mas_equalTo(25);
     }];
     // 箭头

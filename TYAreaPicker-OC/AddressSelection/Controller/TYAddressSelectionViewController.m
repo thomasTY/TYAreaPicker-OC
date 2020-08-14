@@ -178,15 +178,19 @@
         menuItem = [UIButton buttonWithType:UIButtonTypeCustom];
         [menuItem setTitleColor:TYColor(0x333333, 0xEEEEEE) forState:UIControlStateNormal];
         [menuItem setTitleColor:TYColor(0xF32735, 0xE83B47) forState:UIControlStateSelected];
-        menuItem.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size:16.f];
+        UIFont *font = [UIFont fontWithName:@"PingFangSC-Medium" size:16.f];
+        if (!font) {
+            font = [UIFont systemFontOfSize:16.f];
+        }
+        menuItem.titleLabel.font = font;
     }
     return menuItem;
 }
 
 - (UIViewController *)magicView:(VTMagicView *)magicView viewControllerAtPage:(NSUInteger)pageIndex {
-    static NSString *gridId1 = @"ZMAddressSelectionProvinceViewControllerID";
-    static NSString *gridId2 = @"ZMAddressSelectionCityViewControllerID";
-    static NSString *gridId3 = @"ZMAddressSelectionCountyViewControllerID";
+    static NSString *gridId1 = @"TYAddressSelectionProvinceViewControllerID";
+    static NSString *gridId2 = @"TYAddressSelectionCityViewControllerID";
+    static NSString *gridId3 = @"TYAddressSelectionCountyViewControllerID";
     TYAddressSelectionSubViewController *vc = nil;
     if (pageIndex == 0) {// 省
         vc = [magicView dequeueReusablePageWithIdentifier:gridId1];
@@ -202,17 +206,17 @@
         vc.cityId = [self stringWithIndex:1 array:self.areaIdList];
         vc.countyId = [self stringWithIndex:2 array:self.areaIdList];
         if (pageIndex == 0) {// 省
-            vc.type = ZMAddressSelectionTypeProvince;
+            vc.type = TYAddressSelectionTypeProvince;
         } else if (pageIndex == 1) {// 市
-            vc.type = ZMAddressSelectionTypeCity;
+            vc.type = TYAddressSelectionTypeCity;
         } else {// 区
-            vc.type = ZMAddressSelectionTypeCounty;
+            vc.type = TYAddressSelectionTypeCounty;
         }
     }
     return vc;
 }
 
-- (void)magicView:(VTMagicView *)magicView viewDidAppeare:(UIViewController *)viewController atPage:(NSUInteger)pageIndex{
+- (void)magicView:(VTMagicView *)magicView viewDidAppear:(UIViewController *)viewController atPage:(NSUInteger)pageIndex{
     TYAddressSelectionSubViewController* vc = (TYAddressSelectionSubViewController*)viewController;
     NSInteger count = self.areaIdList.count;
     if (count) {
@@ -293,14 +297,13 @@
 
 - (VTMagicView *)magicView {
     if (!_magicView) {
-        _magicView = [[VTMagicView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 500)];
+        _magicView = [VTMagicView new];
         _magicView.delegate = self;
         _magicView.dataSource = self;
         _magicView.magicController = self;
         _magicView.bounces = NO;
-        _magicView.headerHeight = 44;
+        _magicView.headerHeight = 0;
         _magicView.againstStatusBar = NO;
-        _magicView.headerView.backgroundColor = [UIColor ty_colorWithHex:0x201e1e];
         _magicView.navigationView.backgroundColor = TYColor(0xFFFFFF, 0x1A1A1A);
         _magicView.sliderColor = TYColor(0xFFFFFF, 0x1A1A1A);
         _magicView.sliderExtension = 0;

@@ -119,9 +119,9 @@
     NSData * dataJson = [NSData dataWithContentsOfFile:url];
     NSArray <TYAddressProvinceModel *>* mockModels = [TYAddressProvinceModel mj_objectArrayWithKeyValuesArray:dataJson];
     // 过滤
-    if (self.type == ZMAddressSelectionTypeCity) { // 市选择页
+    if (self.type == TYAddressSelectionTypeCity) { // 市选择页
         cityId = @"";
-    } else if (self.type == ZMAddressSelectionTypeProvince) { // 省选择页
+    } else if (self.type == TYAddressSelectionTypeProvince) { // 省选择页
         provinceId = @"";
         cityId = @"";
     }
@@ -129,16 +129,16 @@
     __weak typeof(self) weakSelf = self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [weakSelf.indicatorView stopAnimating];
-        if (weakSelf.type == ZMAddressSelectionTypeProvince) { // 省选择页
+        if (weakSelf.type == TYAddressSelectionTypeProvince) { // 省选择页
             weakSelf.models = (NSArray<TYAddressSelectionModel *> *)mockModels;
-        } else if (weakSelf.type == ZMAddressSelectionTypeCity) { // 市选择页
+        } else if (weakSelf.type == TYAddressSelectionTypeCity) { // 市选择页
             for(TYAddressProvinceModel * p in mockModels) {// 省
                 if([provinceId isEqualToString:p.value]){
                     weakSelf.models = (NSArray<TYAddressSelectionModel *> *)[p city];
                     break;
                 }
             }
-        } else if (weakSelf.type == ZMAddressSelectionTypeCounty) { // 区选择页
+        } else if (weakSelf.type == TYAddressSelectionTypeCounty) { // 区选择页
             for(TYAddressProvinceModel * p in mockModels) {// 省
                 if([provinceId isEqualToString:p.value]){
                     for(TYAddressCityModel * c in p.city) {// 市
@@ -153,6 +153,7 @@
             [self showToast:@"加载失败"];
 //            [weakSelf checkDataErrorHaveData:(weakSelf.models.count > 0) error:error];
         }
+        [self.tableView reloadData];
     });
 }
 
@@ -176,13 +177,13 @@
         TYAddressSelectionModel *model = [self.models objectAtIndex:indexPath.row];
         if (model) {
             NSString * areaId = @"";
-            if (self.type == ZMAddressSelectionTypeCounty &&
+            if (self.type == TYAddressSelectionTypeCounty &&
                 [self.countyId isKindOfClass:[NSString class]] && self.countyId.length) { // 区县选择页
                 areaId = self.countyId;
-            } else if (self.type == ZMAddressSelectionTypeCity &&
+            } else if (self.type == TYAddressSelectionTypeCity &&
                        [self.cityId isKindOfClass:[NSString class]] && self.cityId.length) { // 市选择页
                 areaId = self.cityId;
-            } else if (self.type == ZMAddressSelectionTypeProvince &&
+            } else if (self.type == TYAddressSelectionTypeProvince &&
                        [self.provinceId isKindOfClass:[NSString class]] && self.provinceId.length) { // 省选择页
                 areaId = self.provinceId;
             }
