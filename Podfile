@@ -2,5 +2,6 @@
 # platform :ios, '9.0'
 
 target 'TYAreaPicker-OC' do
-	pod 'Masonry',        '1.1.0'
+	pod 'Masonry', '1.1.0'
+  pod 'VTMagic', '1.2.4'
 end
