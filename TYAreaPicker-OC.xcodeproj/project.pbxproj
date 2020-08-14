@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B480E6C524E6270D0051D6C0 /* TYAddressSelectionSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B480E6BA24E6270D0051D6C0 /* TYAddressSelectionSubViewController.m */; };
+		B480E6C624E6270D0051D6C0 /* TYAddressSelectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B480E6BC24E6270D0051D6C0 /* TYAddressSelectionManager.m */; };
+		B480E6C724E6270D0051D6C0 /* TYAddressSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B480E6BD24E6270D0051D6C0 /* TYAddressSelectionViewController.m */; };
+		B480E6C924E6270D0051D6C0 /* TYAddressSelectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B480E6C324E6270D0051D6C0 /* TYAddressSelectionTableViewCell.m */; };
+		B480E6CB24E627430051D6C0 /* TYAddressSelectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B480E6CA24E627430051D6C0 /* TYAddressSelectionModel.m */; };
 		B480E6CD24E684710051D6C0 /* adress.json in Resources */ = {isa = PBXBuildFile; fileRef = B480E6CC24E684710051D6C0 /* adress.json */; };
+		B480E6D024E688C20051D6C0 /* TYAddressProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B480E6CF24E688C20051D6C0 /* TYAddressProvinceModel.m */; };
+		B480E6D324E689760051D6C0 /* TYAddressCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B480E6D224E689760051D6C0 /* TYAddressCityModel.m */; };
+		B480E6D624E689820051D6C0 /* TYAddressCountyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B480E6D524E689820051D6C0 /* TYAddressCountyModel.m */; };
+		B480E6D924E695950051D6C0 /* UIColor+TYDarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = B480E6D824E695950051D6C0 /* UIColor+TYDarkMode.m */; };
 		B4CEA81424DA557100C6C650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CEA81324DA557100C6C650 /* AppDelegate.m */; };
 		B4CEA81724DA557100C6C650 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CEA81624DA557100C6C650 /* SceneDelegate.m */; };
 		B4CEA81A24DA557100C6C650 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CEA81924DA557100C6C650 /* ViewController.m */; };
@@ -22,7 +31,25 @@
 		08D4F4C3E27064F3E0D0FF8F /* Pods-TYAreaPicker-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYAreaPicker-OC.release.xcconfig"; path = "Target Support Files/Pods-TYAreaPicker-OC/Pods-TYAreaPicker-OC.release.xcconfig"; sourceTree = "<group>"; };
 		311E8B2E8B6B10FD8E0C5D17 /* libPods-TYAreaPicker-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYAreaPicker-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		410DBFB627DFEA36F3D7D7CE /* Pods-TYAreaPicker-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYAreaPicker-OC.debug.xcconfig"; path = "Target Support Files/Pods-TYAreaPicker-OC/Pods-TYAreaPicker-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		B480E6B924E6270D0051D6C0 /* TYAddressSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAddressSelectionViewController.h; sourceTree = "<group>"; };
+		B480E6BA24E6270D0051D6C0 /* TYAddressSelectionSubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAddressSelectionSubViewController.m; sourceTree = "<group>"; };
+		B480E6BB24E6270D0051D6C0 /* TYAddressSelectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAddressSelectionManager.h; sourceTree = "<group>"; };
+		B480E6BC24E6270D0051D6C0 /* TYAddressSelectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAddressSelectionManager.m; sourceTree = "<group>"; };
+		B480E6BD24E6270D0051D6C0 /* TYAddressSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAddressSelectionViewController.m; sourceTree = "<group>"; };
+		B480E6BE24E6270D0051D6C0 /* TYAddressSelectionSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAddressSelectionSubViewController.h; sourceTree = "<group>"; };
+		B480E6C024E6270D0051D6C0 /* TYAddressSelectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAddressSelectionModel.h; sourceTree = "<group>"; };
+		B480E6C324E6270D0051D6C0 /* TYAddressSelectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAddressSelectionTableViewCell.m; sourceTree = "<group>"; };
+		B480E6C424E6270D0051D6C0 /* TYAddressSelectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAddressSelectionTableViewCell.h; sourceTree = "<group>"; };
+		B480E6CA24E627430051D6C0 /* TYAddressSelectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAddressSelectionModel.m; sourceTree = "<group>"; };
 		B480E6CC24E684710051D6C0 /* adress.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adress.json; sourceTree = "<group>"; };
+		B480E6CE24E688C20051D6C0 /* TYAddressProvinceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYAddressProvinceModel.h; sourceTree = "<group>"; };
+		B480E6CF24E688C20051D6C0 /* TYAddressProvinceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYAddressProvinceModel.m; sourceTree = "<group>"; };
+		B480E6D124E689760051D6C0 /* TYAddressCityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYAddressCityModel.h; sourceTree = "<group>"; };
+		B480E6D224E689760051D6C0 /* TYAddressCityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYAddressCityModel.m; sourceTree = "<group>"; };
+		B480E6D424E689820051D6C0 /* TYAddressCountyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYAddressCountyModel.h; sourceTree = "<group>"; };
+		B480E6D524E689820051D6C0 /* TYAddressCountyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYAddressCountyModel.m; sourceTree = "<group>"; };
+		B480E6D724E695950051D6C0 /* UIColor+TYDarkMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+TYDarkMode.h"; sourceTree = "<group>"; };
+		B480E6D824E695950051D6C0 /* UIColor+TYDarkMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TYDarkMode.m"; sourceTree = "<group>"; };
 		B4CEA80F24DA557100C6C650 /* TYAreaPicker-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TYAreaPicker-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CEA81224DA557100C6C650 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4CEA81324DA557100C6C650 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +93,53 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B480E6B724E6270D0051D6C0 /* AddressSelection */ = {
+			isa = PBXGroup;
+			children = (
+				B480E6B824E6270D0051D6C0 /* Controller */,
+				B480E6BF24E6270D0051D6C0 /* Model */,
+				B480E6C224E6270D0051D6C0 /* View */,
+			);
+			path = AddressSelection;
+			sourceTree = "<group>";
+		};
+		B480E6B824E6270D0051D6C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B480E6BB24E6270D0051D6C0 /* TYAddressSelectionManager.h */,
+				B480E6BC24E6270D0051D6C0 /* TYAddressSelectionManager.m */,
+				B480E6B924E6270D0051D6C0 /* TYAddressSelectionViewController.h */,
+				B480E6BD24E6270D0051D6C0 /* TYAddressSelectionViewController.m */,
+				B480E6BE24E6270D0051D6C0 /* TYAddressSelectionSubViewController.h */,
+				B480E6BA24E6270D0051D6C0 /* TYAddressSelectionSubViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B480E6BF24E6270D0051D6C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B480E6C024E6270D0051D6C0 /* TYAddressSelectionModel.h */,
+				B480E6CA24E627430051D6C0 /* TYAddressSelectionModel.m */,
+				B480E6CE24E688C20051D6C0 /* TYAddressProvinceModel.h */,
+				B480E6CF24E688C20051D6C0 /* TYAddressProvinceModel.m */,
+				B480E6D124E689760051D6C0 /* TYAddressCityModel.h */,
+				B480E6D224E689760051D6C0 /* TYAddressCityModel.m */,
+				B480E6D424E689820051D6C0 /* TYAddressCountyModel.h */,
+				B480E6D524E689820051D6C0 /* TYAddressCountyModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B480E6C224E6270D0051D6C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B480E6C424E6270D0051D6C0 /* TYAddressSelectionTableViewCell.h */,
+				B480E6C324E6270D0051D6C0 /* TYAddressSelectionTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B4CEA80624DA557100C6C650 = {
 			isa = PBXGroup;
 			children = (
@@ -93,12 +167,15 @@
 				B4CEA81624DA557100C6C650 /* SceneDelegate.m */,
 				B4CEA81824DA557100C6C650 /* ViewController.h */,
 				B4CEA81924DA557100C6C650 /* ViewController.m */,
+				B480E6D724E695950051D6C0 /* UIColor+TYDarkMode.h */,
+				B480E6D824E695950051D6C0 /* UIColor+TYDarkMode.m */,
 				B480E6CC24E684710051D6C0 /* adress.json */,
 				B4CEA81B24DA557100C6C650 /* Main.storyboard */,
 				B4CEA81E24DA557200C6C650 /* Assets.xcassets */,
 				B4CEA82024DA557200C6C650 /* LaunchScreen.storyboard */,
 				B4CEA82324DA557200C6C650 /* Info.plist */,
 				B4CEA82424DA557200C6C650 /* main.m */,
+				B480E6B724E6270D0051D6C0 /* AddressSelection */,
 			);
 			path = "TYAreaPicker-OC";
 			sourceTree = "<group>";
@@ -201,9 +278,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4CEA81A24DA557100C6C650 /* ViewController.m in Sources */,
+				B480E6D924E695950051D6C0 /* UIColor+TYDarkMode.m in Sources */,
+				B480E6C724E6270D0051D6C0 /* TYAddressSelectionViewController.m in Sources */,
 				B4CEA81424DA557100C6C650 /* AppDelegate.m in Sources */,
+				B480E6D624E689820051D6C0 /* TYAddressCountyModel.m in Sources */,
+				B480E6D024E688C20051D6C0 /* TYAddressProvinceModel.m in Sources */,
+				B480E6D324E689760051D6C0 /* TYAddressCityModel.m in Sources */,
 				B4CEA82524DA557200C6C650 /* main.m in Sources */,
+				B480E6C924E6270D0051D6C0 /* TYAddressSelectionTableViewCell.m in Sources */,
+				B480E6CB24E627430051D6C0 /* TYAddressSelectionModel.m in Sources */,
 				B4CEA81724DA557100C6C650 /* SceneDelegate.m in Sources */,
+				B480E6C624E6270D0051D6C0 /* TYAddressSelectionManager.m in Sources */,
+				B480E6C524E6270D0051D6C0 /* TYAddressSelectionSubViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
