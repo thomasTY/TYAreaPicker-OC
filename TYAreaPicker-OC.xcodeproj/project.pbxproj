@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B480E6CD24E684710051D6C0 /* adress.json in Resources */ = {isa = PBXBuildFile; fileRef = B480E6CC24E684710051D6C0 /* adress.json */; };
 		B4CEA81424DA557100C6C650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CEA81324DA557100C6C650 /* AppDelegate.m */; };
 		B4CEA81724DA557100C6C650 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CEA81624DA557100C6C650 /* SceneDelegate.m */; };
 		B4CEA81A24DA557100C6C650 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CEA81924DA557100C6C650 /* ViewController.m */; };
@@ -21,6 +22,7 @@
 		08D4F4C3E27064F3E0D0FF8F /* Pods-TYAreaPicker-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYAreaPicker-OC.release.xcconfig"; path = "Target Support Files/Pods-TYAreaPicker-OC/Pods-TYAreaPicker-OC.release.xcconfig"; sourceTree = "<group>"; };
 		311E8B2E8B6B10FD8E0C5D17 /* libPods-TYAreaPicker-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYAreaPicker-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		410DBFB627DFEA36F3D7D7CE /* Pods-TYAreaPicker-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYAreaPicker-OC.debug.xcconfig"; path = "Target Support Files/Pods-TYAreaPicker-OC/Pods-TYAreaPicker-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		B480E6CC24E684710051D6C0 /* adress.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adress.json; sourceTree = "<group>"; };
 		B4CEA80F24DA557100C6C650 /* TYAreaPicker-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TYAreaPicker-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CEA81224DA557100C6C650 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4CEA81324DA557100C6C650 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				B4CEA81624DA557100C6C650 /* SceneDelegate.m */,
 				B4CEA81824DA557100C6C650 /* ViewController.h */,
 				B4CEA81924DA557100C6C650 /* ViewController.m */,
+				B480E6CC24E684710051D6C0 /* adress.json */,
 				B4CEA81B24DA557100C6C650 /* Main.storyboard */,
 				B4CEA81E24DA557200C6C650 /* Assets.xcassets */,
 				B4CEA82024DA557200C6C650 /* LaunchScreen.storyboard */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4CEA82224DA557200C6C650 /* LaunchScreen.storyboard in Resources */,
+				B480E6CD24E684710051D6C0 /* adress.json in Resources */,
 				B4CEA81F24DA557200C6C650 /* Assets.xcassets in Resources */,
 				B4CEA81D24DA557100C6C650 /* Main.storyboard in Resources */,
 			);
