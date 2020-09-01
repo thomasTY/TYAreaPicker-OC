@@ -12,8 +12,9 @@
 #import "TYAddressSelectionManager.h"
 
 @interface ViewController ()
+@property (nonatomic, strong) UIButton * containerButton;
 @property (nonatomic, strong) UILabel * titleLabel;
-@property (nonatomic, strong) UIButton * areaButton;
+@property (nonatomic, strong) UILabel * areaLabel;
 @property (nonatomic, strong) UIImageView * arrowImageView;
 @property (nonatomic, strong) TYAddressSelectionManager * addressSelectionManager;
 @end
@@ -31,30 +32,38 @@
 #pragma mark - Private Method
 // 搭建界面
 - (void)UIConfig {
-    self.view.backgroundColor = TYColor(0xFFFFFF, 0x1A1A1A);
-    [self.view addSubview:self.titleLabel];
-    [self.view addSubview:self.areaButton];
-    [self.view addSubview:self.arrowImageView];
+    self.view.backgroundColor = TYColor(0xF0F0F0, 0x1A1A1A);
+    [self.view addSubview:self.containerButton];
+    [self.containerButton addSubview:self.titleLabel];
+    [self.containerButton addSubview:self.areaLabel];
+    [self.containerButton addSubview:self.arrowImageView];
+    // 按钮
+    [self.containerButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).offset(80);
+        make.left.equalTo(self.view);
+        make.right.equalTo(self.view);
+        make.height.mas_equalTo(35);
+    }];
     // 所在地
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view).offset(100);
-        make.left.equalTo(self.view).offset(10);
+        make.centerY.equalTo(self.containerButton);
+        make.left.equalTo(self.containerButton).offset(10);
         make.height.mas_equalTo(25);
     }];
     // 区域
-    [self.areaButton mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.areaLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.titleLabel);
-        make.right.equalTo(self.view).offset(-30);
+        make.right.equalTo(self.containerButton).offset(-30);
         make.height.mas_equalTo(25);
     }];
     // 箭头
     [self.arrowImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.titleLabel);
-        make.right.equalTo(self.view).offset(-10);
+        make.right.equalTo(self.containerButton).offset(-10);
     }];
 }
 
-- (void)areaButtonClick {
+- (void)containerButtonClick {
     self.addressSelectionManager = [TYAddressSelectionManager new];
     __weak typeof(self) weakSelf = self;
     [self.addressSelectionManager showFromVc:self selectedCompletion:^(NSArray<NSString *> * _Nonnull array) {
@@ -62,7 +71,7 @@
         NSString * city = [array objectAtIndex:1];
         NSString * county = [array objectAtIndex:2];
         NSString * addressStr = [NSString stringWithFormat:@"%@ %@ %@",province, city, county];
-        [weakSelf.areaButton setTitle:addressStr forState:UIControlStateNormal];
+        weakSelf.areaLabel.text = addressStr;
     }];
 }
 
@@ -71,26 +80,33 @@
 #pragma mark - Delegate
 
 #pragma mark - Getter And Setter
+- (UIButton *)containerButton {
+    if (!_containerButton) {
+        _containerButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _containerButton.backgroundColor = TYColor(0xFFFFFF, 0x222222);
+        [_containerButton addTarget:self action:@selector(containerButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _containerButton;
+}
+
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [UILabel new];
-        _titleLabel.backgroundColor = [UIColor clearColor];
         _titleLabel.font = [UIFont systemFontOfSize:16];
-        _titleLabel.textColor = [UIColor ty_colorWithHex:0x333333];
+        _titleLabel.textColor = TYColor(0x333333, 0xEEEEEE);
         _titleLabel.text = @"所在地";
     }
     return _titleLabel;
 }
 
-- (UIButton *)areaButton {
-    if (!_areaButton) {
-        _areaButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        _areaButton.titleLabel.font = [UIFont systemFontOfSize:14];
-        [_areaButton setTitleColor:[UIColor ty_colorWithHex:0x333333] forState:UIControlStateNormal];
-        [_areaButton setTitle:@"请选择" forState:UIControlStateNormal];
-        [_areaButton addTarget:self action:@selector(areaButtonClick) forControlEvents:UIControlEventTouchUpInside];
+- (UILabel *)areaLabel {
+    if (!_areaLabel) {
+        _areaLabel = [UILabel new];
+        _areaLabel.font = [UIFont systemFontOfSize:14];
+        _areaLabel.textColor = TYColor(0xAAAAAA, 0x666666);
+        _areaLabel.text = @"请选择";
     }
-    return _areaButton;
+    return _areaLabel;
 }
 
 - (UIImageView *)arrowImageView {
