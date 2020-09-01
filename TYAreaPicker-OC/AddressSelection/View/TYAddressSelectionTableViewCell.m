@@ -37,8 +37,12 @@
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     // 标题
     _titleLabel = [UILabel new];
-    _titleLabel.font = [UIFont systemFontOfSize:14.f];
-    _titleLabel.textColor = [UIColor ty_colorWithHex:0x333333];
+    UIFont *font = [UIFont fontWithName:@"PingFangSC-Medium" size:14.f];
+    if (!font) {
+        font = [UIFont systemFontOfSize:14.f];
+    }
+    _titleLabel.font = font;
+    _titleLabel.textColor = TYColor(0x333333, 0xEEEEEE);
     [self.contentView addSubview:_titleLabel];
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.contentView);
